@@ -10,13 +10,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #eff7f6;
+    background-color: #FAE0E4;
 }
 
 /* calculadora */
 .calculator {
     width: 300px;
-    background-color: #f2b5d4;
+    background-color: #FF85A1;
     border-radius: 10px;
     box-shadow: 0px 4px 4px #776e7283;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,7 @@ body {
     height: 75px;
     padding: 20px;
     text-align: right;
-    color: white;
+    color: #fff; /* cor do resultado */
     font-size: 2.5rem;
 }
 
@@ -36,7 +36,7 @@ body {
 .buttons {
     display: grid;
     grid-template-columns: repeat(4,1fr); /* define quantas colunas o grid deve ter (no caso, 4) e divide o valor disponível por fração (no caso, 1 fração) */
-    grid-gap: 2px; /* define o espaçamento entre linhas e colunas no grid */
+    grid-gap: 1px; /* define o espaçamento entre linhas e colunas no grid */
 }
 
 /* para cada botão */
@@ -46,29 +46,35 @@ body {
     align-items: center;
     width: 100%;
     height: 60px;
-    font: 1.5rem;
+    color: #fff; /* cor dos números dos botões */
+    font-size: 1.5rem;
     font-weight: bold;
     border: none;
     outline: none;
-    cursor: pointer;
+    cursor: pointer; /* para aparecer a mãozinha ao passar o mouse sobre os botões da calculadora */
 }
 
+/* tamanho do botão zero */
 .button-zero {
     grid-column: span 2; /* 'span' significa que o botão zero vai "cobrir/pegar" 2 colunas */
 }
 
-.bg-gray {
-    background-color: #F3E7EB;
+/* fundo dos botões com essa classe */
+.bg-pink {
+    background-color: #fab0bd;
 }
 
-.bg-light-gray {
-    background-color: #f5c5da;
+/* cor do botão 0 */
+.bg-light-pink {
+    background-color: #F9BEC7;
 }
 
 button:active { /* quando o botão estiver ativo (se o botão for clicado)...*/
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
-.bg-orange {
-    background-color: #fed1e3;
+/* cor dos botões da lateral direita */
+.bg-soft-pink {
+    background-color: #fea2b3;
 }
+
