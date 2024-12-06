@@ -7,10 +7,19 @@
 
 body {
     display: flex; /* torna flexíveis os itens do corpo */
+    flex-direction: column; /* Faz os elementos se alinharem verticalmente */
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #FAE0E4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* estilização do h1 */
+.titulo {
+    font-size: 3.5rem;
+    color: #FF85A1; /* Cor do título */
+    margin-bottom: 20px; /* Espaço entre o título e a calculadora */
 }
 
 /* calculadora */
@@ -19,7 +28,6 @@ body {
     background-color: #FF85A1;
     border-radius: 10px;
     box-shadow: 0px 4px 4px #776e7283;
-    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden; /* qualquer parte do conteúdo que ultrapassar o limite do elemento será cortada e não aparecerá, sem a possibilidade de rolar para visualizar essa parte */
 }
 
