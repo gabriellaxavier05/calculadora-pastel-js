@@ -59,7 +59,8 @@ h1 {
 
 /* botões para alterar as cores da calculadora */
 .temas button {
-    margin: 50px 10px; /* 1- top e bottom; 2- direita e esquerda */
+    margin: 50px 10px;
+    /* 1- top e bottom; 2- direita e esquerda */
     padding: 10px;
     border: none;
     border-radius: 5px;
