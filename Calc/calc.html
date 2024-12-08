@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- importação da fonte do título -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container"> <!-- todo o quadrado da calculadora -->
+        <h1>Calculadora Pastel</h1>
+        <div class="calculadora"> <!-- visor e botões da calculadora -->
+            <div id="visor" class="visor">0</div> <!-- visor da calculadora -->
+            <div class="botoes">
+                <button onclick="inserir('7')">7</button>
+                <button onclick="inserir('8')">8</button>
+                <button onclick="inserir('9')">9</button>
+                <button onclick="inserir('/')">/</button>
+
+                <button onclick="inserir('4')">4</button>
+                <button onclick="inserir('5')">5</button>
+                <button onclick="inserir('6')">6</button>
+                <button onclick="inserir('*')">*</button>
+
+                <button onclick="inserir('1')">1</button>
+                <button onclick="inserir('2')">2</button>
+                <button onclick="inserir('3')">3</button>
+                <button onclick="inserir('-')">-</button>
+
+                <button onclick="inserir('0')">0</button>
+                <button onclick="inserir('.')">.</button>
+                <button onclick="inserir('+')">+</button>
+                <button onclick="calcular()">=</button>
+
+                <button onclick="limpar()">C</button>
+                <button onclick="apagar()">DEL</button>
+                <button onclick="inserir('%')">%</button>
+                <button onclick="inserir('-')">+/-</button>
+            </div>
+        </div>
+        <div class="temas">
+            <button onclick="mudarTema('rosa')">Rosa 🩷</button>
+            <button onclick="mudarTema('azul')">Azul 🩵</button>
+            <button onclick="mudarTema('roxo')">Roxo 💜</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
